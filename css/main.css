@@ -1,7 +1,9 @@
 
+@import 'setup/vars.css';
 @import 'apps/mail/main.css';
 @import 'apps/mail/cmps/preview.css';
 @import 'apps/mail/cmps/list.css';
+@import 'apps/notes/notes.css';
 
 * {
   box-sizing: border-box;
