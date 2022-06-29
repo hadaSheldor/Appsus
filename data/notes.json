@@ -1,0 +1,37 @@
+[
+  {
+    "id": "note1",
+    "type": "todo",
+    "isPinned": true,
+    "style": {},
+    "info": {
+      "title": "Groceries",
+      "txt": "",
+      "todos": [
+        {
+          "txt": "Milk",
+          "isChecked": false
+        },
+        {
+          "txt": "Bread",
+          "isChecked": true
+        },
+        {
+          "txt": "Pasta",
+          "isChecked": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "note2",
+    "type": "txt",
+    "isPinned": false,
+    "style": {},
+    "info": {
+      "title": "",
+      "txt": "",
+      "todos": []
+    }
+  }
+]

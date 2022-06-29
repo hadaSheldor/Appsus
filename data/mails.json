@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ass1",
+    "subject": "Wazzzzzup MOMO?",
+    "body": "mi est eros convallis auctor arcu dapibus himenaeos",
+    "sentAt": "Date.now()",
+    "to": "user1@appsus.com",
+    "from": "hadashm@gmail.com",
+    "isRead": false,
+    "isMarked": false,
+    "isDraft": false,
+    "isDelete": false
+  },
+  {
+    "id": "ass2",
+    "subject": "Wazzzzzup BOBO?",
+    "body": "mi sdlkj alsmn kj oiu dl dlaskdj est eros convallis auctor arcu dapibus himenaeos",
+    "sentAt": "Date.now()",
+    "to": "user@appsus.com",
+    "from": "hadashm@gmail.com",
+    "isRead": false,
+    "isMarked": false,
+    "isDraft": false,
+    "isDelete": false
+  },
+  {
+    "id": "ass3",
+    "subject": "Wazzzzzup MOMO?",
+    "body": "mi est eros convallis auctor arcu dapibus himenaeos",
+    "sentAt": "Date.now()",
+    "to": "user@appsus.com",
+    "from": "hadashm@gmail.com",
+    "isRead": false,
+    "isMarked": false,
+    "isDraft": false,
+    "isDelete": false
+  },
+  {
+    "id": "ass4",
+    "subject": "Wazzzzzup KOKO?",
+    "body": "mi est eros convallis auctor arcu dapibus himenaeos",
+    "sentAt": "Date.now()",
+    "to": "user@appsus.com",
+    "from": "hadashm@gmail.com",
+    "isRead": false,
+    "isMarked": false,
+    "isDraft": false,
+    "isDelete": false
+  },
+  {
+    "id": "ass5",
+    "subject": "Wazzzzzup TOTO?",
+    "body": "mi est eros convallis auctor arcu dapibus himenaeos",
+    "sentAt": "Date.now()",
+    "to": "user@appsus.com",
+    "from": "hadashm@gmail.com",
+    "isRead": false,
+    "isMarked": false,
+    "isDraft": false,
+    "isDelete": false
+  },
+  {
+    "id": "ass6",
+    "subject": "Wazzzzzup POPO?",
+    "body": "mi est eros convallis auctor arcu dapibus himenaeos",
+    "sentAt": "Date.now()",
+    "to": "user@appsus.com",
+    "from": "hadashm@gmail.com",
+    "isRead": false,
+    "isMarked": false,
+    "isDraft": false,
+    "isDelete": false
+  }
+]
