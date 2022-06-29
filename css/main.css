@@ -1,4 +1,4 @@
-
+@import 'apps/mail/cmps/sidebar.css';
 @import 'apps/mail/main.css';
 @import 'apps/mail/cmps/preview.css';
 @import 'apps/mail/cmps/list.css';
@@ -9,17 +9,17 @@
 
 body {
   margin: 0;
-  background-color: var(--clr1)  
+  background-color: var(--clr1);
 }
 
-.app-header{
+.app-header {
   display: flex;
   width: 100%;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   margin-top: 20px;
 }
 
-.nav-bar{
+.nav-bar {
   width: 20%;
   padding: 20px;
   display: flex;
@@ -28,11 +28,11 @@ body {
   justify-content: space-between;
 }
 
-.logo-container{
+.logo-container {
   /* border: red solid 2px; */
 }
 
-.logo{
+.logo {
   width: 80px;
   height: 70px;
 }
