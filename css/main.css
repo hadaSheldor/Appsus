@@ -1,3 +1,8 @@
+
+@import 'apps/mail/main.css';
+@import 'apps/mail/cmps/preview.css';
+@import 'apps/mail/cmps/list.css';
+
 * {
   box-sizing: border-box;
 }
