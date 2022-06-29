@@ -1,4 +1,4 @@
-// import { mailServices } from './services/mail-services.js'
+import { emailService } from '../services/mail-services.js'
 
 export default {
   template: `
@@ -9,17 +9,20 @@ export default {
               <ul>
                 <li>bye</li>
                 <li>bye</li>
-                <li>bye</li>
               </ul>
             </div>
         </div>
     </section>
   `,
   data() {
-    return {}
+    return {
+      emails: null,
+    }
   },
 
-  created() {},
+  created() {
+    emailService.query().then((emails) => (this.emails = emails))
+  },
 
   methods: {},
 
