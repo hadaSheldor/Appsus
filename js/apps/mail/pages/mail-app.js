@@ -1,15 +1,19 @@
 import { emailService } from '../services/mail-services.js'
+import emailList from '../cmps/email-list.cmp.js'
 
 export default {
   template: `
-    <section class="mail-app">
-        <div class="mail-layout-container">
-            <div class="mail-container">
-              <h1>Hi</h1>
-              <ul>
-                <li>bye</li>
-                <li>bye</li>
-              </ul>
+    <section class="email-app">
+        <div class="layout-container">
+            
+            <div class="emails-container">
+              <!-- ADD: emails-filter cmp -->
+              <!-- ADD: emails-list cmp -->
+              <email-list :emails="emails" />
+            </div>
+            
+            <div class="emails-side-bar">
+              <!-- ADD: emails-folders cmp -->
             </div>
         </div>
     </section>
@@ -27,6 +31,10 @@ export default {
   methods: {},
 
   computed: {},
+
+  components: {
+    emailList,
+  },
 
   unmounted() {},
 }
