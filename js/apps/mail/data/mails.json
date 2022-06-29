@@ -3,7 +3,7 @@
     "id": "ass1",
     "subject": "Wazzzzzup MOMO?",
     "body": "mi est eros convallis auctor arcu dapibus himenaeos",
-    "sentAt": "Date.now()",
+    "sentAt": "today",
     "to": "user1@appsus.com",
     "from": "hadashm@gmail.com",
     "isRead": true,

@@ -8,7 +8,6 @@ export default {
             
             <div class="emails-container">
               <!-- ADD: emails-filter cmp -->
-              <!-- ADD: emails-list cmp -->
               <email-list :emails="emails" />
             </div>
             

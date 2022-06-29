@@ -1,12 +1,13 @@
 export default {
   template: `
     <section class="email-preview-container">
+        <div class=star>★</div>    
+        <span class="from">{{ email.from }}</span>
         <div class="email-preview-content">
-            <!-- ADD: span star img -->
             <div class="subject">{{ email.subject }}</div>
             <div class="body">{{ email.body }}</div>
-            <!-- ADD: span email-date -->
         </div>
+        <span class="date">{{ email.sentAt }}</span>
     </section>
     `,
 
