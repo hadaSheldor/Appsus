@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 @import 'apps/mail/cmps/sidebar.css';
+=======
+
+@import 'setup/vars.css';
+>>>>>>> 0fa66e3cee68150506242af6e0df0ede7a6f1f02
 @import 'apps/mail/main.css';
 @import 'apps/mail/cmps/preview.css';
 @import 'apps/mail/cmps/list.css';
+@import 'apps/notes/notes.css';
 
 * {
   box-sizing: border-box;

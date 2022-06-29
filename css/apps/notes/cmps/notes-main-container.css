@@ -1,0 +1,8 @@
+.notes-main-container{
+    width: 100%;
+    height: 80vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    /* border:green 2px solid; */
+}
