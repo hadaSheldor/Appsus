@@ -1,18 +1,16 @@
-import noteItem from "./note.cmp.js"
+import noteDetails from "./note-details.cmp.js"
 
 export default {
     props: ["notes"],
     template: `
         <section class="notes-container">
-            <ul>   
-                <li v-for="note in notes" :key="note.id"> 
-                    <note-item :note="note" />
-                </li>
-            </ul>
+            <div v-for="note in notes" :key="note.id" @click="select(note)">
+                <note-details :note="note"/>
+            </div>
         </section>
 `,
     components: {
-        noteItem
+        noteDetails
     },
     data() {
         return {};

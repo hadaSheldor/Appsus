@@ -1,17 +1,26 @@
+import { noteService } from "../services/note-service.js"
 import notesMainContainer from "../cmps/notes-main-container.cmp.js"
 
 export default {
     template: `
-            <notes-main-container />
+            <notes-main-container :notes="notesToDisplay" />
     `,
     components:{
         notesMainContainer
     },
     data() {
-        return {};
+        return {
+            notes: null,
+        };
     },
-    created() { },
+    created() { 
+        noteService.query().then(notes => this.notes = notes)
+    },
     methods: {},
-    computed: {},
+    computed: {
+        notesToDisplay(){
+            return this.notes
+        }
+    },
     unmounted() { },
 };

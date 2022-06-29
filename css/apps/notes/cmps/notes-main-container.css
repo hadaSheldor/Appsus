@@ -4,5 +4,5 @@
     padding: 10px;
     display: flex;
     flex-direction: row;
-    /* border:green 2px solid; */
+    border-top: 2px solid var(--clr2);
 }

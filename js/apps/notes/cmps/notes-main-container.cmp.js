@@ -2,10 +2,11 @@ import sideNavBar from "./side-nav-bar.cmp.js"
 import notesContainer from "./notes-container.cmp.js"
 
 export default {
+    props: ["notes"],
     template: `
             <section class="notes-main-container">
                 <side-nav-bar />
-                <notes-container />
+                <notes-container :notes="notes" />
             </section>
     `,
     components:{
