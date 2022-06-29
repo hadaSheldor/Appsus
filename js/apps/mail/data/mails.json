@@ -6,7 +6,7 @@
     "sentAt": "Date.now()",
     "to": "user1@appsus.com",
     "from": "hadashm@gmail.com",
-    "isRead": false,
+    "isRead": true,
     "isMarked": false,
     "isDraft": false,
     "isDelete": false
