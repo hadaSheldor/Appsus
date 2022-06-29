@@ -1,5 +1,5 @@
-import homePage from './views/home-page.cmp.js'
-import aboutPage from './views/about-page.cmp.js'
+// import homePage from './views/home-page.cmp.js'
+// import aboutPage from './views/about-page.cmp.js'
 
 const routes = [
   {

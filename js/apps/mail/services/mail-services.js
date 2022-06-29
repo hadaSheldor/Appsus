@@ -1,5 +1,5 @@
 import emailsData from '../data/mails.json' assert { type: 'json' }
-import { utilService } from '../../../services/util.js'
+import { utilService } from './services/util.js'
 
 const EMAILS_KEY = 'emailsDB'
 _createMails()
