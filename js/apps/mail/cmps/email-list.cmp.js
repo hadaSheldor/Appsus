@@ -2,14 +2,9 @@ import emailPreview from './email-preview.cmp.js'
 
 export default {
   template: `
-    <table class="email-list">
-        <tbody>
-            <tr v-for="email in emails" :key="email.id" >
-                <email-preview :email="email"/>
-                <!-- ADD: email-preview cmp -->
-            </tr>
-        </tbody>
-    </table>          
+  <section v-for="email in emails" :key="email.id" class="email-list-container">
+    <email-preview :email="email"/>
+  </section>
 `,
 
   props: ['emails'],
