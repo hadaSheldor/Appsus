@@ -1,3 +1,6 @@
-ul {
-  background-color: yellow;
+.email-sidebar-container {
+  position: relative;
+  height: 100%;
+  width: 20%;
+  margin-left: 2em;
 }

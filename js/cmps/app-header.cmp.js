@@ -1,8 +1,8 @@
 export default {
-    template:`
+  template: `
     <header class="app-header">
        <div class="logo-container">
-           <img class="logo" src='../../img/logo.PNG'>
+           <img class="logo" src='../../img/icons-gmail-48.PNG'>
        </div>
        <nav class="nav-bar">
          <router-link to="/">Home</router-link>
@@ -12,10 +12,9 @@ export default {
        </nav>
     </header>
    `,
-     data() {
-       return {
-       }
-     },
-     methods:{},
-   computed:{}
-   }
+  data() {
+    return {}
+  },
+  methods: {},
+  computed: {},
+}
