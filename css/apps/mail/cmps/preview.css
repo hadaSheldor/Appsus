@@ -35,6 +35,25 @@
   cursor: pointer;
 }
 
+.read-icon {
+  display: none;
+}
+
+.email-preview-container:hover .date {
+  display: none;
+}
+
+.email-preview-container:hover .read-icon {
+  position: absolute;
+  overflow: hidden;
+  right: 1rem;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
 .email-preview-content {
   overflow: hidden;
   max-width: 80vw;

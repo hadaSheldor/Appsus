@@ -8,12 +8,12 @@ export default {
             <div class="body">{{ email.body }}</div>
         </div>
         <span class="date">{{ formatDate(email) }}</span>
-        <span class="trash">
-            <img @click.stop="onRemove(email.id)" src="../../../img/trash-can50 (1).png" alt="">    
-        </span>
-        <span class="read">
-            <img @click.stop="onToggleRead(email)" src="../../../img/trash-can50 (1).png" alt="">    
-        </span>
+        <div class="trash">
+            <img @click.stop="onRemove(email.id)" src="../../../img/trash-can50.png" alt="">    
+        </div>
+        <div class="read-icon">
+            <img @click.stop="onToggleRead(email)" src="../../../img/trash-can50.png" alt="">    
+        </div>
     </section>
     `,
 
