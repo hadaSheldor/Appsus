@@ -19,3 +19,8 @@
     width: 120px;
     height: 120px;
 }
+
+.note.video video{
+    width: 300px;
+    height: 300px;
+}

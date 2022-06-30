@@ -1,27 +1,18 @@
+import { noteService } from "../services/note-service.js"
 import noteText from "./note-text.cmp.js"
 import noteTodo from "./note-todo.cmp.js"
 import noteImage from "./note-image.cmp.js"
 import noteVideo from "./note-video.cmp.js"
 
 export default {
-    props: ["notes"],
     template: `
         <section class="notes-container">
             <div class="new-note-container">
                 <input type="text" class="note-input">
             </div>
-            <div class="note-card" v-for="note in notes" :key="note.id" @click="select(note)">
-                <note-text v-if="note.type === 'text'" :note="note"/>
-                <note-image v-else-if="note.type === 'image'" :note="note"/>
-                <!-- <note-todo i-else-if="note.type === 'todo'" :note="note"/>  -->
-                <note-video v-else-if="note.type === 'video'" :note="note"/>  
-
-
-                <!-- <button @click="$emit('close')">Pin</button>
-                <button @click="$emit('close')">Change Color</button>
-                <button @click="$emit('close')">Mail</button>
-                <button @click="$emit('close')">Edit</button>
-                <button @click="$emit('close')">Delete</button> -->
+            <div class="note-card" v-for="note in notes" >
+                <component :is="note.type" :key= "note.id" :note="note" @noteClicked="action">
+                </component>
             </div>
         </section>
 `,
@@ -33,15 +24,30 @@ export default {
     },
     data() {
         return {
+           notes: null,
         };
     },
     created() { 
+        noteService.query().then(notes => this.notes = notes)
     },
     mounted() {
     },
     methods: {
-
+        action(action, noteId){          
+            const func = this[action]
+            if(func && typeof func === "function"){
+                func(noteId)
+            }
+        },
+        delete(noteId){
+            noteService.remove(noteId)          
+            .then(() => {
+                const idx = this.notes.findIndex((note) => note.id === noteId)
+                this.notes.splice(idx, 1);
+            })
+        }
     },
-    computed: {},
+    computed: {
+    },
     unmounted() { },
 };

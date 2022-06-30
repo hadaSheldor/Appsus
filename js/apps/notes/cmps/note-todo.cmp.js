@@ -4,20 +4,23 @@ export default {
     props: ["note"],
     template: `
          <div v-if="note" class="note todo">
-             <h4>Note Details</h4>
-             <p><h1>Title:</h1><span>{{note.info.title}}</span></p>
-             <p><h2>Type:</h2><span>{{note.type}}</span></p>
-             <note-buttons-panel :note='note'  />
+             <h4>TODO List: </h4><span>{{ note.info.title }}</span>
+             <note-buttons-panel @onButtonClicked="action" />
          </div>
    `,
     components: {
         noteButtonsPanel
     },
-   data() {
-   return {};
-   },
-   created() {},
-   methods: {},
-   computed: {},
-   unmounted() {},
-   };
+    data() {
+        return {};
+    },
+    created() {
+    },
+    methods: {
+        action(action){
+            this.$emit('noteClicked', action, this.note.id)
+        }
+    },
+    computed: {},
+    unmounted() { },
+};

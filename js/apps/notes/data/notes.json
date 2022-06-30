@@ -1,7 +1,7 @@
 [
   {
     "id": "note1",
-    "type": "todo",
+    "type": "noteTodo",
     "isPinned": true,
     "style": {},
     "info": {
@@ -25,38 +25,49 @@
   },
   {
     "id": "note2",
-    "type": "text",
+    "type": "noteText",
     "isPinned": false,
     "style": {},
     "text": "Success is not final; failure is not fatal: It is the courage to continue that counts."
   },
   {
     "id": "note3",
-    "type": "image",
+    "type": "noteImage",
     "isPinned": false,
     "style": {},
     "info": {
-      "title": "Lovely ct",
+      "title": "Lovely cat",
       "text": "",
       "url": "../../../../js/apps/notes/data/media/cat.jpg"
     } 
   },
   {
-    "id": "note2",
-    "type": "text",
+    "id": "note4",
+    "type": "noteText",
     "isPinned": false,
     "style": {},
     "text": "When you change your thoughts, remember to also change your world."
   },
   {
-    "id": "note3",
-    "type": "video",
+    "id": "note5",
+    "type": "noteVideo",
     "isPinned": false,
     "style": {},
     "info": {
       "title": "Funny Animals Cartoons",
       "text": "",
-      "url": "https://www.youtube.com/watch?v=VG7qg4RRkqQ"
+      "url": "../../../../js/apps/notes/data/media/theRightWay.mp4#t=8"
+    } 
+  },
+  {
+    "id": "note6",
+    "type": "noteImage",
+    "isPinned": false,
+    "style": {},
+    "info": {
+      "title": "Working cat",
+      "text": "",
+      "url": "../../../../js/apps/notes/data/media/desktop.png"
     } 
   }
 ]

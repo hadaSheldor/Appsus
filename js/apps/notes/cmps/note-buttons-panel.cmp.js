@@ -1,12 +1,11 @@
 export default {
-    props: ["note"],
     template: `
-        <div v-if="note" class="note-buttons-panel" >
-            <button @click="$emit('close')">Pin</button>
-            <button @click="$emit('close')">Change Color</button>
-            <button @click="$emit('close')">Mail</button>
-            <button @click="$emit('close')">Edit</button>
-            <button @click="$emit('close')">Delete</button>
+        <div class="note-buttons-panel" >
+            <button @click="onPin">Pin</button>
+            <button @click="onColorChange">Change Color</button>
+            <button @click="onMail">Mail</button>
+            <button @click="onEdit">Edit</button>
+            <button @click="onDelete">Delete</button>
         </div>
 `,
     components: {
@@ -20,7 +19,29 @@ export default {
     mounted() {
     },
     methods: {
+        onPin(){
+            this.onClick('pin')
+        },
 
+        onColorChange(){
+            this.onClick('changeColor')
+        },
+
+        onMail(){
+            this.onClick('mail')
+        },
+
+        onEdit(){
+            this.onClick('edit')
+        },
+
+        onDelete(){
+            this.onClick('delete')
+        },
+
+        onClick(value){
+            this.$emit('onButtonClicked', value)
+        },
     },
     computed: {},
     unmounted() { },

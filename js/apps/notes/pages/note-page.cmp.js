@@ -1,26 +1,25 @@
-import { noteService } from "../services/note-service.js"
-import notesMainContainer from "../cmps/notes-main-container.cmp.js"
+import sideNavBar from "../cmps/side-nav-bar.cmp.js"
+import notesContainer from "../cmps/notes-container.cmp.js"
 
 export default {
     template: `
-            <notes-main-container :notes="notesToDisplay" />
+
+        <section class="notes-main-container">
+            <side-nav-bar />
+            <notes-container />
+        </section>
     `,
     components:{
-        notesMainContainer
+        sideNavBar,
+        notesContainer
     },
     data() {
-        return {
-            notes: null,
-        };
+        return {};
     },
     created() { 
-        noteService.query().then(notes => this.notes = notes)
     },
     methods: {},
     computed: {
-        notesToDisplay(){
-            return this.notes
-        }
     },
     unmounted() { },
 };
