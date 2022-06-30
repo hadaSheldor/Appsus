@@ -4,7 +4,7 @@ export default {
     props: ["note"],
     template: `
          <div v-if="note" class="note image">
-             <h4>{{ note.title }}</h4>
+             <div><h4>{{ note.title }}</h4></div>
              <img :src="note.info.url" >
              <note-buttons-panel @onButtonClicked="action" />
          </div>
@@ -19,7 +19,7 @@ export default {
     },
     methods: {
         action(action){
-            this.$emit('noteClicked', action, this.note.id)
+            this.$emit('noteClicked', action, this.note)
         }
     },
     computed: {

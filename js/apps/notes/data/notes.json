@@ -62,7 +62,7 @@
   {
     "id": "note6",
     "type": "noteImage",
-    "isPinned": false,
+    "isPinned": true,
     "style": {},
     "info": {
       "title": "Working cat",

@@ -18,7 +18,7 @@ export default {
     },
     methods: {
         action(action){
-            this.$emit('noteClicked', action, this.note.id)
+            this.$emit('noteClicked', action, this.note)
         }
     },
     computed: {},

@@ -7,9 +7,9 @@ const NOTES_KEY = 'notes'
 
 export const noteService = {
     query,
-    // get,
-    remove//,
-    // save,
+    //get,
+    remove,
+    put
     // getEmptyBook,
 }
 
@@ -32,5 +32,9 @@ function query() {
 
 function remove(noteId) {
     return storageService.remove(NOTES_KEY, noteId)
+}
+
+function put(currNote){
+    return storageService.put(NOTES_KEY, currNote)
 }
 

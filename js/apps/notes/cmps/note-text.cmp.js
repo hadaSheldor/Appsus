@@ -4,7 +4,7 @@ export default {
  props: ["note"],
  template: `
       <div v-if="note" class="note text">
-          <h4>{{ note.text }}</h4>
+          <div><h4>{{ note.text }}</h4></div>
           <note-buttons-panel @onButtonClicked="action" />
       </div>
 `,
@@ -17,7 +17,7 @@ data() {
 created() {},
 methods: {
     action(action){
-        this.$emit('noteClicked', action, this.note.id)
+        this.$emit('noteClicked', action, this.note)
     }
 },
 computed: {},

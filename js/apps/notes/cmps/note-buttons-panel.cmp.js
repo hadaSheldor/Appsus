@@ -3,7 +3,7 @@ export default {
         <div class="note-buttons-panel" >
             <button @click="onPin">Pin</button>
             <button @click="onColorChange">Change Color</button>
-            <button @click="onMail">Mail</button>
+            <!-- <button @click="onMail">Mail</button> -->
             <button @click="onEdit">Edit</button>
             <button @click="onDelete">Delete</button>
         </div>
