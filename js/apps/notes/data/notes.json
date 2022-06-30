@@ -28,11 +28,7 @@
     "type": "text",
     "isPinned": false,
     "style": {},
-    "info": {
-      "title": "",
-      "text": "",
-      "todos": []
-    }
+    "text": "Success is not final; failure is not fatal: It is the courage to continue that counts."
   },
   {
     "id": "note3",
@@ -42,8 +38,25 @@
     "info": {
       "title": "Lovely ct",
       "text": "",
-      "todos": [],
-      "url": "../img/cat.jpg"
-    }
+      "url": "../../../../js/apps/notes/data/media/cat.jpg"
+    } 
+  },
+  {
+    "id": "note2",
+    "type": "text",
+    "isPinned": false,
+    "style": {},
+    "text": "When you change your thoughts, remember to also change your world."
+  },
+  {
+    "id": "note3",
+    "type": "video",
+    "isPinned": false,
+    "style": {},
+    "info": {
+      "title": "Funny Animals Cartoons",
+      "text": "",
+      "url": "https://www.youtube.com/watch?v=VG7qg4RRkqQ"
+    } 
   }
 ]
