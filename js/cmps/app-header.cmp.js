@@ -6,7 +6,7 @@ export default {
        </div>
        <nav class="nav-bar">
          <router-link to="/">Home</router-link>
-         <router-link to="/mail">Mail</router-link>
+         <router-link to="/email/inbox">eMail</router-link>
          <router-link to="/notes">Notes</router-link>
          <router-link to="/about">About</router-link>
        </nav>

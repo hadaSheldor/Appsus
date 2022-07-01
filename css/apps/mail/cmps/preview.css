@@ -11,6 +11,9 @@
   background-color: rgba(242, 245, 245, 0.8);
 }
 
+.unRead {
+  font-weight: bolder;
+}
 /* .email-preview-container:hover {
   box-shadow: rgb(100 121 143 / 12%) 0px -1px 0px 0px inset;
 } */
