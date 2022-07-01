@@ -38,7 +38,7 @@ export default {
             noteService.query()
             .then(notes => {
                 this.notes = notes
-                this.notes = this.notes.sort((a,b) => Number(b.isPinned) - Number(a.isPinned))
+                this.notes = this.notes.sort((a, b) => (a.pin > b.pin) ? 1 : -1)
             })
 
         },
@@ -49,14 +49,11 @@ export default {
             }
         },
         pin(currNote){
-            currNote.isPinned = !currNote.isPinned 
+            currNote.pin = (currNote.pin === 'pin') ? 'unpin' : 'pin' 
             noteService.put(currNote)
             .then(() => {
-                this.getNotes()
+                setTimeout(this.getNotes(), 6000)
             })
-            //unpined url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+CiAgPHBhdGggZmlsbD0iIzAwMCIgZD0iTTE3IDR2N2wyIDN2MmgtNnY1bC0xIDEtMS0xdi01SDV2LTJsMi0zVjRjMC0xLjEuOS0yIDItMmg2YzEuMTEgMCAyIC44OSAyIDJ6TTkgNHY3Ljc1TDcuNSAxNGg5TDE1IDExLjc1VjRIOXoiLz4KPC9zdmc+Cg==)
-            //pined url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+CiAgPHBhdGggZmlsbD0iIzAwMCIgZD0iTTE3IDRhMiAyIDAgMCAwLTItMkg5Yy0xLjEgMC0yIC45LTIgMnY3bC0yIDN2Mmg2djVsMSAxIDEtMXYtNWg2di0ybC0yLTNWNHoiLz4KPC9zdmc+Cg==)
-        
         },
         delete(currNote){
             noteService.remove(currNote.id)          
