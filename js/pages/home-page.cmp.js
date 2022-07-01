@@ -1,6 +1,6 @@
 export default {
  template: `
- <h1>Home page</h1>
+ <div class="home-page"></div>
 `,
 data() {
 return {};

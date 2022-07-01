@@ -1,17 +1,25 @@
-import notesMainContainer from "../cmps/notes-main-container.cmp.js"
+import sideNavBar from "../cmps/side-nav-bar.cmp.js"
+import notesContainer from "../cmps/notes-container.cmp.js"
 
 export default {
     template: `
-            <notes-main-container />
+
+        <section class="notes-main-container">
+            <side-nav-bar />
+            <notes-container />
+        </section>
     `,
     components:{
-        notesMainContainer
+        sideNavBar,
+        notesContainer
     },
     data() {
         return {};
     },
-    created() { },
+    created() { 
+    },
     methods: {},
-    computed: {},
+    computed: {
+    },
     unmounted() { },
 };

@@ -1,20 +1,22 @@
 .menu-item{
-    display:flex;
+    display: flex;
     align-items: center;
-    border:rgb(0, 255, 34) 2px solid;
     font-size: .875rem;
     font-weight: 500;
     line-height: 1.25rem;
+    padding: 0 30px 0 10px;
+    border-top-right-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
 }
 
-/* .menu-icon{
-    width: 1.5em;
-    height: 1.5em;
-} */
+.menu-item:hover{
+    background-color: var(--clr2);
+}
 
-/* svg{
-    width: 24px;
-    height: 24px;
-    viewBox: 0 0 24px 24px;
-} */
+svg{
+    width: 40px;
+    height: 40px;
+    justify-self: start;
+} 
+
 

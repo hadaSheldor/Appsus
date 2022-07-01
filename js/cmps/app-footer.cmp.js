@@ -1,6 +1,6 @@
 export default {
  template: `
- <span>Footer</span>
+ <!-- <span>Footer</span> -->
 `,
 data() {
 return {};
