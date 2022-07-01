@@ -1,3 +1,10 @@
+.email-sidebar-container {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  background-color: #fff;
+}
+
 .email-sidebar-btn {
   top: 1.3rem;
   position: relative;
