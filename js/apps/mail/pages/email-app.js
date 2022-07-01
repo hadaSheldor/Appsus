@@ -4,7 +4,7 @@ import emailSidebar from '../cmps/email-sidebar.cmp.js'
 
 export default {
   template: `
-    <section class="email-app">
+    <section class="email-app main-layout">
         <div class="layout-container">
           
           <!-- Sidebar -->
