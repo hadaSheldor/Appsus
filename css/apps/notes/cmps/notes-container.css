@@ -4,14 +4,25 @@
     flex-direction: column;
 }
 
-.new-note-container{
+.notes-container .new-note-container{
     padding: 20px 20px 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.notes-list{
+.note-input{
+    width: 50%;
+    height: 3em;
+    border-radius: 1em; 
+    border-color: var(--clr2);
+}
+
+.note-input:active{
+    border-color: var(--clr2);
+}
+
+.notes-container .notes-list{
     column-count: auto;
     column-width: 300px;
     padding: 10px 0 0 0;

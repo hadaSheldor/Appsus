@@ -5,9 +5,23 @@
     border-radius: 1em; 
     /* border: 2px solid var(--clr2); */
     padding: 0.5em;
-    height: fit-content;
+    height: fit-content; 
     display: flex;
     flex-direction: column;
+}
+
+.note:first-child{
+    margin-top: 0;
+}
+
+.note:last-child{
+    height: auto;
+}
+
+.note:hover .note-edit-buttons-panel{
+    /* Display on hover buttons panel */
+    opacity: 1;
+    transition: 1s;
 }
 
 .note.text{

@@ -4,11 +4,11 @@ export default {
     props: ["note"],
     template: `
          <div v-if="note" class="note video">
-            <h4>Video note</h4>
+            <h4>{{ note.info.title }}</h4>
             <video controls="controls" preload="auto">
                 <source :src="note.info.url" type="video/mp4">
             </video> 
-            <note-buttons-panel @onButtonClicked="action" />
+            <note-buttons-panel :notePin = "note.pin" @onButtonClicked="action" />
          </div>
    `,
     components: {

@@ -1,11 +1,16 @@
 export default {
+    props: ["notePin"],
     template: `
-        <div class="note-buttons-panel" >
-            <button @click="onPin">Pin</button>
-            <button @click="onColorChange">Change Color</button>
-            <!-- <button @click="onMail">Mail</button> -->
-            <button @click="onEdit">Edit</button>
-            <button @click="onDelete">Delete</button>
+        <div class="note-buttons-panel"> 
+            <div>    
+                <button @click="onPin" :class="notePin"></button>
+            </div>
+            <div class="note-edit-buttons-panel"> 
+                <button @click="onColorChange" title="Background options" class="color"></button>
+                <button @click="onMail"  title="Send to mail" class="mail"></button> 
+                <button @click="onEdit" title="Edit" class="edit"></button>
+                <button @click="onDelete" title="Delete" class="delete"></button>
+            </div>
         </div>
 `,
     components: {
@@ -43,6 +48,7 @@ export default {
             this.$emit('onButtonClicked', value)
         },
     },
-    computed: {},
+    computed: {
+    },
     unmounted() { },
 };

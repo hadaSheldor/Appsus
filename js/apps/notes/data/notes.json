@@ -2,7 +2,7 @@
   {
     "id": "note1",
     "type": "noteImage",
-    "isPinned": false,
+    "pin": "unpin",
     "style": {},
     "info": {
       "title": "Vacation",
@@ -13,14 +13,14 @@
   {
     "id": "note2",
     "type": "noteText",
-    "isPinned": false,
+    "pin": "unpin",
     "style": {},
     "text": "Success is not final; failure is not fatal: It is the courage to continue that counts."
   },
   {
     "id": "note3",
     "type": "noteImage",
-    "isPinned": false,
+    "pin": "unpin",
     "style": {},
     "info": {
       "title": "Lovely cat",
@@ -31,17 +31,17 @@
   {
     "id": "note4",
     "type": "noteText",
-    "isPinned": false,
+    "pin": "unpin",
     "style": {},
     "text": "When you change your thoughts, remember to also change your world."
   },
   {
     "id": "note5",
     "type": "noteVideo",
-    "isPinned": false,
+    "pin": "unpin",
     "style": {},
     "info": {
-      "title": "Funny Animals Cartoons",
+      "title": "The right way Cartoons",
       "text": "",
       "url": "../../../../js/apps/notes/data/media/theRightWay.mp4#t=8"
     } 
@@ -49,7 +49,7 @@
   {
     "id": "note6",
     "type": "noteImage",
-    "isPinned": true,
+    "pin": "pin",
     "style": {},
     "info": {
       "title": "Working cat",
@@ -60,7 +60,7 @@
   {
     "id": "note7",
     "type": "noteImage",
-    "isPinned": true,
+    "pin": "pin",
     "style": {},
     "info": {
       "title": "Be free, enjoy...",
@@ -71,21 +71,21 @@
   {
     "id": "note8",
     "type": "noteText",
-    "isPinned": false,
+    "pin": "unpin",
     "style": {},
     "text": "I'm sick of following my dreams, man. I'm just going to ask where they're going and hook up with 'em later."
   },
   {
     "id": "note9",
     "type": "noteText",
-    "isPinned": false,
+    "pin": "unpin",
     "style": {},
     "text": "Before you marry a person, you should first make them use a computer with slow Internet to see who they really are."
   },
   {
     "id": "note10",
     "type": "noteTodo",
-    "isPinned": true,
+    "pin": "unpin",
     "style": {},
     "info": {
       "title": "Groceries",

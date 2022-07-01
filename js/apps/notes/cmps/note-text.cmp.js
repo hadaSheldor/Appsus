@@ -5,7 +5,7 @@ export default {
  template: `
       <div v-if="note" class="note text">
           <div><h4>{{ note.text }}</h4></div>
-          <note-buttons-panel @onButtonClicked="action" />
+          <note-buttons-panel :notePin = "note.pin"  @onButtonClicked="action" />
       </div>
 `,
 components: {

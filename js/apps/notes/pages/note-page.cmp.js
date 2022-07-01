@@ -3,7 +3,6 @@ import notesContainer from "../cmps/notes-container.cmp.js"
 
 export default {
     template: `
-
         <section class="main-container">
             <side-nav-bar />
             <notes-container />
