@@ -4,7 +4,7 @@ import notesContainer from "../cmps/notes-container.cmp.js"
 export default {
     template: `
 
-        <section class="notes-main-container">
+        <section class="main-container">
             <side-nav-bar />
             <notes-container />
         </section>

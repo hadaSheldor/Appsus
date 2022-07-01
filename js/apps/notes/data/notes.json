@@ -1,27 +1,14 @@
 [
   {
     "id": "note1",
-    "type": "noteTodo",
-    "isPinned": true,
+    "type": "noteImage",
+    "isPinned": false,
     "style": {},
     "info": {
-      "title": "Groceries",
+      "title": "Vacation",
       "text": "",
-      "todos": [
-        {
-          "text": "Milk",
-          "isChecked": false
-        },
-        {
-          "text": "Bread",
-          "isChecked": true
-        },
-        {
-          "text": "Pasta",
-          "isChecked": false
-        }
-      ]
-    }
+      "url": "../../../../js/apps/notes/data/media/holidayCanada.jpg"
+    } 
   },
   {
     "id": "note2",
@@ -69,5 +56,54 @@
       "text": "",
       "url": "../../../../js/apps/notes/data/media/desktop.png"
     } 
+  },
+  {
+    "id": "note7",
+    "type": "noteImage",
+    "isPinned": true,
+    "style": {},
+    "info": {
+      "title": "Be free, enjoy...",
+      "text": "",
+      "url": "../../../../js/apps/notes/data/media/holiday.jpg"
+    } 
+  },
+  {
+    "id": "note8",
+    "type": "noteText",
+    "isPinned": false,
+    "style": {},
+    "text": "I'm sick of following my dreams, man. I'm just going to ask where they're going and hook up with 'em later."
+  },
+  {
+    "id": "note9",
+    "type": "noteText",
+    "isPinned": false,
+    "style": {},
+    "text": "Before you marry a person, you should first make them use a computer with slow Internet to see who they really are."
+  },
+  {
+    "id": "note10",
+    "type": "noteTodo",
+    "isPinned": true,
+    "style": {},
+    "info": {
+      "title": "Groceries",
+      "text": "",
+      "todos": [
+        {
+          "text": "Milk",
+          "isChecked": false
+        },
+        {
+          "text": "Bread",
+          "isChecked": true
+        },
+        {
+          "text": "Pasta",
+          "isChecked": false
+        }
+      ]
+    }
   }
 ]

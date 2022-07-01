@@ -10,8 +10,10 @@ export default {
             <div class="new-note-container">
                 <input type="text" class="note-input">
             </div>
-            <component v-for="note in notes" :is="note.type" :key= "note.id" :note="note" @noteClicked="action">
-            </component>
+            <section class="notes-list">
+                <component v-for="note in notes" :is="note.type" :key= "note.id" :note="note" @noteClicked="action">
+                </component>
+            </section>
         </section>
 `,
     components: {
