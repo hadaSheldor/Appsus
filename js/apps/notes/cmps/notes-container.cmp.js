@@ -7,9 +7,12 @@ import noteVideo from "./note-video.cmp.js"
 export default {
     template: `
         <section class="notes-container">
-            <div class="new-note-container">
-                <input type="text" class="note-input">
-            </div>
+            <!-- <div class="new-note-container">
+                <div>
+                    <img =>
+                    <input type="text" class="note-input" placeholder="Take a note...">
+                <div>
+            </div> -->
             <section class="notes-list">
                 <component v-for="note in notes" :is="note.type" :key= "note.id" :note="note" @noteClicked="action">
                 </component>
@@ -28,7 +31,6 @@ export default {
         };
     },
     created() { 
-       // this.getNotes()
     },
     mounted() {
         this.getNotes()
