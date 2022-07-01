@@ -5,7 +5,7 @@ export default {
         <div class="from" :class='isRead(email)'>{{ email.from }}</div>
         <div class="email-preview-content" >
             <div class="subject" :class='isRead(email)'>{{ email.subject }}</div>
-            <div class="body" :class='isRead(email)'>{{ email.body }}</div>
+            <div class="body">{{email.body }}</div>
         </div>
         <span class="date" :class='isRead(email)'>{{ formatDate(email.sentAt) }}</span>
         <span class="trash-icon">

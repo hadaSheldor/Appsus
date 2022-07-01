@@ -1,27 +1,25 @@
 .email-preview-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
   padding: 10px;
-  left: 10em;
+  left: 10rem;
   position: relative;
-  width: 80%;
-  height: 7%;
-  box-shadow: rgb(100 121 143 / 12%) 0px -1px 0px 0px inset;
+  width: 85%;
+  /* height: 7%; */
+  box-shadow: rgb(100 121 143 / 10%) 0px -1px 0px 0px inset;
   background-color: rgba(242, 245, 245, 0.8);
 }
 
-.unRead {
-  font-weight: bolder;
+.email-preview-container:hover {
+  box-shadow: rgb(100 121 143 / 25%) 0px -1px 0px 0px inset;
 }
-/* .email-preview-container:hover {
-  box-shadow: rgb(100 121 143 / 12%) 0px -1px 0px 0px inset;
-} */
 
 .email-preview-container > * :not(.star) :not(.date) {
   display: flex;
   justify-content: flex-start;
-  line-height: 20px;
+  /* line-height: 2rem; */
 }
 
 .email-preview-container .star {
@@ -35,12 +33,11 @@
 }
 
 .email-preview-container .from {
-  flex-basis: 10%;
+  flex-basis: 20%;
   align-self: flex-start;
   cursor: pointer;
-  margin-right: 30px;
-  margin-left: 30px;
-  /* min-width: 110px; */
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
   padding: 10px;
 }
 
@@ -48,9 +45,11 @@
   position: absolute;
   overflow: hidden;
   right: 1rem;
-  width: 30%;
+  /* width: 30%; */
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  flex-basis: 10%;
   cursor: pointer;
 }
 
@@ -93,18 +92,31 @@
   overflow: hidden;
   max-width: 80vw;
   display: flex;
-  align-self: flex-start;
+  align-items: center;
   cursor: pointer;
+  line-height: 1.5rem;
+  justify-content: space-between;
 }
 
 .email-preview-content .body {
-  align-self: flex-start;
+  /* align-items: center; */
+  /* justify-content: center; */
+  align-self: flex-end;
   white-space: nowrap;
-  padding-left: 10px;
   text-overflow: ellipsis;
   overflow: hidden;
+  flex-basis: 60%;
 }
 
 .email-preview-content .subject {
   min-width: max-content;
+  overflow: hidden;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: center;
+}
+
+.unRead {
+  font-weight: bolder;
 }

@@ -1,14 +1,62 @@
 .email-sidebar-container {
-  position: relative;
+  position: fixed;
   height: 100%;
-  width: 20%;
-  margin-left: 2em;
   flex-basis: 20%;
   padding-inline-start: 0.7rem;
 }
 
 .email-sidebar-btn {
-  padding: 0.3rem;
+  position: relative;
+  padding: 0.7rem;
+  right: 1.2rem;
   font-size: 1rem;
   text-align: start;
+  display: flex;
+  align-items: center;
+}
+
+.email-sidebar-btn > img {
+  position: absolute;
+  right: 1rem;
+  left: 1.5rem;
+  font-size: 10rem;
+}
+
+.email-sidebar-btn > .btn {
+  position: relative;
+  right: 2rem;
+  left: 3rem;
+  letter-spacing: 0.04em;
+}
+
+.compose-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0.5rem;
+  min-width: 95px;
+  line-height: 2rem;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+  border-radius: 24px;
+  height: 48px;
+  padding: 14px;
+  text-align: center;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+}
+
+.compose-btn img {
+  width: 32px;
+  height: 32px;
+}
+
+.compose-btn span {
+  font-size: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  line-height: 2rem;
+  letter-spacing: 0.03em;
+  color: #d93025;
 }
