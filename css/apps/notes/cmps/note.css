@@ -1,14 +1,13 @@
 .note{
-    width: 100%; 
-    border-radius: 2em;
-    border: 2px solid var(--clr2);
-    display:flex;
-    flex-direction: column;
-    justify-content:space-between;  
-    /* flex-wrap: wrap; */
-    align-items: center; 
-    justify-items: flex-start;
+    margin-top: 0.5em;
+    break-inside: avoid;
+    width: auto; 
+    border-radius: 1em; 
+    /* border: 2px solid var(--clr2); */
     padding: 0.5em;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
 }
 
 .note.text{
@@ -20,21 +19,21 @@
 }
 
 .note.image{
-    background-color: rgb(228,139,131)
+    background-color: rgb(228,139,131);
 }
 
 .note.video{
-    background-color: rgb(210,175,251)
+    background-color: rgb(210,175,251);
 }
 
 .note.image img{
-    width: 100%;
-    /* align-self: flex-start;   */
+    border-radius: 0.5em;
+    max-width: 300px;
 }
 
 .note.video video{
-    width: 280px;
-    height: 280px;
+    border-radius: 0.5em;
+    max-width: 300px;
 }
 
 

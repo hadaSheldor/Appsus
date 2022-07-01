@@ -1,9 +1,18 @@
 .notes-container{
-    display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 350px));
-    /* grid-auto-rows: minmax(200px, 350px); */
-    grid-auto-flow: dense;
-    gap: 10px;
-    padding: 0 10px 0 10px;  
+    display:flex;
+    flex-direction: column;
+}
+
+.new-note-container{
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notes-list{
+    column-count: auto;
+    column-width: 300px;
+    padding: 10px 0 0 0;
 }
