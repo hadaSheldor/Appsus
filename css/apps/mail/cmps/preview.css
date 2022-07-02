@@ -3,8 +3,12 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  padding: 0;
+  margin-left: 23px;
+  margin-right: 18px;
+  width: calc(85vw - 1px);
+  /* width: 95%; */
   left: 13rem;
-  width: 95%;
   box-shadow: rgb(100 121 143 / 10%) 0px -1px 0px 0px inset;
   background-color: var(--clr8);
 }
@@ -20,12 +24,13 @@
 
 .email-preview-container .star {
   color: var(--clr6);
+  box-sizing: border-box;
   display: flex;
   align-self: flex-start;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-left: 1rem;
 }
 
@@ -34,6 +39,7 @@
   align-self: flex-start;
   cursor: pointer;
   margin-left: 1rem;
+  margin-right: 1.5rem;
   padding: 10px;
   font-size: 0.875rem;
   letter-spacing: 0.04rem;
@@ -82,12 +88,13 @@
 }
 
 .email-preview-content {
-  overflow: hidden;
-  max-width: 80vw;
   display: flex;
   align-items: center;
   cursor: pointer;
-  justify-content: space-between;
+  overflow: hidden;
+  /* max-width: 80vw; */
+  max-width: calc(100vw - 35rem);
+  /* justify-content: space-between; */
 }
 
 .email-preview-content .body {
@@ -99,11 +106,13 @@
   overflow: hidden;
   font-size: 0.875rem;
   color: var(--clr5);
+  padding-left: 5px;
 }
 
 .email-preview-content .subject {
   min-width: max-content;
   text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
   display: flex;
   align-self: flex-start;

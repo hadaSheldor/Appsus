@@ -1,22 +1,20 @@
 export default {
   template: `
-    <section class="email-preview-container">
-      <td>
-        <span @click.stop="onMark(email)" class="star">{{ isStarred(email) }}</span>    
-      </td>    
-      <td class="from" :class='isRead(email)'>{{ email.from }}</td>
-        <div class="email-preview-content" >
-            <td class="subject" :class='isRead(email)'>{{ email.subject }}</td>
-            <td class="body"> - {{email.body }}</td>
-        </div>
-      <td class="date" :class='isRead(email)'>{{ formatDate(email.sentAt) }}</td>
-        <span class="trash-icon">
-          <img @click.stop="onRemove(email)" src="../../../img/mail_delete_black_20dp.png">    
-        </span>
-        <span class="read-icon">
-          <img @click.stop="onToggleRead(email)" src="../../../img/mail_markunread_black_20dp.png">    
-        </span>
-    </section>
+    <article class="email-preview-container">
+      <div @click.stop="onMark(email)" class="star">{{ isStarred(email) }}</div>    
+      <span class="from" :class='isRead(email)'>{{ email.from }}</span>
+      <div class="email-preview-content" >
+        <span class="subject" :class='isRead(email)'>{{ email.subject }}</span>
+        <span class="body"> - {{email.body }}</span>
+      </div>
+      <span class="date" :class='isRead(email)'>{{ formatDate(email.sentAt) }}</span>
+      <div class="trash-icon">
+        <img @click.stop="onRemove(email)" src="../../../img/mail_delete_black_20dp.png">    
+      </div>
+      <div class="read-icon">
+        <img @click.stop="onToggleRead(email)" src="../../../img/mail_markunread_black_20dp.png">    
+      </div>
+    </article>
   `,
 
   props: ['email'],
