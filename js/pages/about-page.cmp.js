@@ -1,6 +1,10 @@
 export default {
  template: `
- <h1>About page</h1>
+    <div class="logo-container">
+        <div>
+            <img src="../../img/logo.png" width="500">
+        </div>
+    </div>
 `,
 data() {
 return {};

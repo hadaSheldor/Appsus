@@ -1,9 +1,9 @@
 export default {
   template: `
     <header class="app-header">
-       <div class="logo-container">
+       <!-- <div class="logo-container">
            <img class="logo" src='../../img/icons-gmail-48.PNG'>
-       </div>
+       </div> -->
        <nav class="nav-bar">
          <router-link to="/">Home</router-link>
          <router-link to="/email/inbox">eMail</router-link>

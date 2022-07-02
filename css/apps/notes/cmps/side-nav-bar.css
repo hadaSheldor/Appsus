@@ -14,7 +14,11 @@
 }
 
 .menu-item.active {
-  background-color: var(--clr8);
+  background-color: var(--clr4);
+}
+
+.menu-item.active:hover {
+  background-color: var(--clr4);
 }
 
 .menu-item:hover {
