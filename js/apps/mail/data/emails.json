@@ -19,7 +19,7 @@
     "sentAt": 1656412196621,
     "to": "",
     "from": "miss@appsus.com",
-    "isRead": false,
+    "isRead": true,
     "isMarked": false,
     "isDraft": true,
     "isDelete": false,

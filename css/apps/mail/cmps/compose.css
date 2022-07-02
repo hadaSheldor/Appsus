@@ -1,0 +1,117 @@
+textarea {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  overflow: auto;
+  resize: none;
+}
+
+.email-compose-container {
+  height: 500px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border-start-end-radius: 8px;
+  border-start-start-radius: 8px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.29);
+  position: fixed;
+  bottom: 0;
+  right: 70px;
+  background-color: var(--clr1);
+  font-size: 0.875rem;
+}
+
+.email-compose-title {
+  height: 40px;
+  border-start-end-radius: 8px;
+  border-start-start-radius: 8px;
+  background-color: var(--clr11);
+  color: var(--clr12);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.email-compose-form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.close-btn {
+  font-size: 1.1rem;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding-left: 3px;
+  padding-bottom: 1px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: var(--clr1);
+}
+
+.email-compose-to,
+.email-compose-subject {
+  height: 35px;
+  width: 95%;
+  align-self: center;
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.178);
+}
+
+.email-compose-container:not(.email-compose-txt) textarea {
+  font-size: 0.875rem;
+  width: 100%;
+  line-height: 34px;
+}
+
+.email-compose-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.email-compose-txt textarea {
+  width: 95%;
+  height: 95%;
+}
+
+.email-compose-actions {
+  height: 60px;
+  justify-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-top: 0.5px solid rgba(128, 128, 128, 0.288);
+}
+
+.send-btn {
+  background-color: var(--clr13);
+  color: var(--clr1);
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  width: 90px;
+  cursor: pointer;
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+}
+
+.send-btn:hover {
+  opacity: 90%;
+}
+
+.delete-btn {
+  margin-right: 5px;
+  cursor: pointer;
+}

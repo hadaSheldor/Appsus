@@ -3,7 +3,7 @@ export default {
     <section class="email-sidebar-container">
       
       <!-- Compose -->
-      <div class="compose-btn">
+      <div class="compose-btn" @click="onCompose">
         <img src="../../../img/mail_create_32dp.png" />
         <span>Compose</span>
       </div>
@@ -43,6 +43,9 @@ export default {
   methods: {
     onFilterByFolder(folder) {
       this.$emit('filterByFolder', folder)
+    },
+    onCompose() {
+      this.$emit('onComposed')
     },
   },
 }

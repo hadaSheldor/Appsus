@@ -3,18 +3,12 @@ import emailPreview from './email-preview.cmp.js'
 export default {
   template: `
   <section v-for="email in emails" :key="email.id" class="email-list-container">
-    <table>
-      <tbody>
-        <tr>
-          <email-preview 
-            :email="email" 
-            @marked="onMarked(email)" 
-            @toggleRead="onToggleRead(email)" 
-            @remove="onRemoved(email)"
-            @openEmail="onOpen(email)" />
-        </tr>
-      </tbody>
-    </table>
+    <email-preview 
+      :email="email" 
+        @marked="onMarked(email)" 
+        @toggleRead="onToggleRead(email)" 
+        @remove="onRemoved(email)"
+        @openEmail="onOpen(email)" />
   </section>
 `,
   props: ['emails'],

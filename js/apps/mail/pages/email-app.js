@@ -2,6 +2,7 @@ import { emailService } from '../services/email-services.js'
 import emailList from '../cmps/email-list.cmp.js'
 import emailSidebar from '../cmps/email-sidebar.cmp.js'
 import emailDetails from '../cmps/email-details.cmp.js'
+import emailCompose from '../cmps/email-compose.cmp.js'
 
 export default {
   template: `
@@ -9,7 +10,10 @@ export default {
         <div class="layout-container">
           
           <div class="emails-side-bar">
-            <email-sidebar :unreadCount="unreadCount" @filterByFolder="filterByFolder"/>
+            <email-sidebar 
+              :unreadCount="unreadCount" 
+              @onComposed="getCompose"
+              @filterByFolder="filterByFolder"/>
           </div>
             
           <div class="emails-container">
@@ -21,7 +25,10 @@ export default {
               @openEmail="openMail"
             />
           </div>
-            
+          
+          <div class="emails-compose-section">
+            <email-compose @onCloseCompose="closeCompose" v-if="isCompose" />
+          </div>
         </div>
     </section>
   `,
@@ -31,7 +38,7 @@ export default {
       folder: 'inbox',
       filterBy: null,
       selected: null,
-      compose: false,
+      isCompose: false,
       unreadCount: null,
     }
   },
@@ -80,6 +87,12 @@ export default {
     openEmail(email) {
       console.log('email', email)
     },
+    getCompose() {
+      this.isCompose = true
+    },
+    closeCompose() {
+      this.isCompose = false
+    },
   },
 
   computed: {},
@@ -88,5 +101,6 @@ export default {
     emailList,
     emailSidebar,
     emailDetails,
+    emailCompose,
   },
 }
