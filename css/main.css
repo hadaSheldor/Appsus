@@ -19,7 +19,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 20px;
+  /* margin-top: 5px; */
 }
 
 .nav-bar {
@@ -28,11 +28,23 @@ body {
   display: flex;
   align-self: flex-end;
   justify-content: center;
+  border-bottom: var(--clr8) solid 2px;
 }
 
 .main-menu-item{
   text-decoration: none;
+  color: var(--clr7);
   padding: 1.5em 3.5em 1.5em 1.5em;
+  font-weight: 700;
+  font-variant: all-petite-caps;
+}
+
+.main-menu-item:hover{
+  font-variant: small-caps;
+}
+
+.main-menu-item.active{
+  color: var(--clr10);
 }
 
 .logo {
