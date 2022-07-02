@@ -26,6 +26,8 @@
     margin-top: 10px;
     border: .3em solid var(--clr2);
     border-radius: 1.5em;
+    text-decoration: none;
+    color: inherit;
 }
 
 .menu-item.new-note img{

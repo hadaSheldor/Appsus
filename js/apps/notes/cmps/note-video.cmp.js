@@ -8,7 +8,7 @@ export default {
             <video controls="controls" preload="auto">
                 <source :src="note.info.url" type="video/mp4">
             </video> 
-            <note-buttons-panel :notePin = "note.pin" @onButtonClicked="action" />
+            <note-buttons-panel :note = "note" @onButtonClicked="action" />
          </div>
    `,
     components: {

@@ -1,7 +1,7 @@
 export default {
     template: `
                 <section class="side-nav-bar">
-                    <div class="menu-item new-note">
+                    <div class="menu-item new-note" @click="onComposeNote">
                         <img src="../../../img/mail_create_32dp.png">
                         Compose
                     </div>
@@ -48,7 +48,14 @@ export default {
         return {};
     },
     created() { },
-    methods: {},
+    methods: {
+        onComposeNote(){
+            this.menuItemClicked('composeNote')
+        },
+        menuItemClicked(value){
+            this.$emit('onMenuItemClicked', value)
+        },
+    },
     computed: {
         
     },
