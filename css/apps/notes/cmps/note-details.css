@@ -28,6 +28,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    height: fit-content;
   }
   
   .modal-header h3 {
@@ -50,6 +51,8 @@
     height: 30%;
     border: var(--clr5) solid .1em;
     margin-bottom: 0.8em;
+    min-width: 340px;
+    min-height: 150px;
   }
 
   .note-details-img-area{
