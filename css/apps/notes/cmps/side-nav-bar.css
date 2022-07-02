@@ -1,5 +1,5 @@
 .side-nav-bar {
-  margin-right: 10px;
+  margin-right: 2em;
 }
 
 .menu-item {
@@ -22,13 +22,21 @@
 }
 
 .menu-item.new-note{
+    min-width: 95px;
+    height: 48px;
     margin-bottom: 20px;
     margin-top: 10px;
-    border: .3em solid var(--clr2);
+    /* border: .3em solid var(--clr2); */
     border-radius: 1.5em;
     text-decoration: none;
     color: inherit;
     box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+}
+
+.menu-item.new-note:hover {
+  box-shadow: rgba(60, 64, 67, 0.438) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.438) 0px 1px 9px 1px;
+  background-color: rgba(60, 64, 67, 0.027);
 }
 
 .menu-item.new-note img {

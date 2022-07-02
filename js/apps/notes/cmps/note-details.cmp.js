@@ -3,7 +3,6 @@ import { noteService } from "../services/note-service.js"
 export default {
     props: ["note"],
     template: `
-   <h1>Details</h1>
     <div class="note-details-background">
         <div class="note-details-location" @click="cancel">
             <div class="note-details-container" @click.stop>
