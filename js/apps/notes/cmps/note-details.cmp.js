@@ -3,20 +3,16 @@ import { noteService } from "../services/note-service.js"
 export default {
     props: ["note"],
     template: `
-   <h1>Details</h1>
-    <div class="modal-mask">
-        <div class="modal-wrapper" @click="cancel">
-            <div class="modal-container" @click.stop>
-                <div class="modal-body">
-                    <!-- <form @submit.prevent> -->
-                        <input type="text" v-model="noteToEdit.info.title" placeholder="Title" />
-                        <textarea v-model="noteToEdit.info.text" placeholder="Take a note..."></textarea> 
-
-                        <div class="modal-footer">
-                            <button @click="updateNote">Save</button>
-                            <button @click="cancel">Cancel</button>  
-                        </div>
-                    <!-- </form> -->
+    <div class="note-details-background">
+        <div class="note-details-location" @click="cancel">
+            <div class="note-details-container" @click.stop>
+                <div class="note-details-body">
+                    <input type="text" v-model="noteToEdit.info.title" placeholder="Title" />
+                    <textarea v-model="noteToEdit.info.text"></textarea> 
+                </div>
+                <div class="note-details-footer">
+                    <button @click="updateNote">Save</button>
+                    <button @click="cancel">Cancel</button>  
                 </div>
             </div>
         </div>

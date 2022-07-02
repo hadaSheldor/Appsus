@@ -5,7 +5,7 @@ export default {
     template: `
          <div v-if="note" class="note image">
              <div><h4>{{ note.info.title }}</h4></div>
-             <img :src="note.info.url" >
+             <img :src="note.info.url" :height="calcHeight">
              <note-buttons-panel :note = "note" @onButtonClicked="action" />
          </div>
    `,
@@ -23,7 +23,9 @@ export default {
         }
     },
     computed: {
+        calcHeight(){
 
+        },
     },
     unmounted() { },
 };

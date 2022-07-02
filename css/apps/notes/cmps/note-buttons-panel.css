@@ -21,7 +21,7 @@
      align-items: baseline;
 }
 
-button{
+.note-button{
     width: 20px;
     height: 20px;
     background-repeat: no-repeat;
@@ -52,11 +52,6 @@ button{
     background-image: url('../../../../img/pencil-square.svg');
  } 
  
-/* img{
-    width: 20px;
-    height: 20px;
-}  */
-
 .color{
     background-image: url('../../../../img/palette.svg');
 }
