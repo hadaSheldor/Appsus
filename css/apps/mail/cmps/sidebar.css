@@ -13,11 +13,12 @@
   font-size: 0.875rem;
   text-align: start;
   display: flex;
+  /* flex-direction: row; */
   align-items: center;
 }
 
 .email-sidebar-btn:hover {
-  background-color: var(--clr3);
+  background-color: var(--clr9);
   border-start-end-radius: 25px;
   border-end-end-radius: 25px;
   padding-right: 1.5em;
@@ -79,5 +80,16 @@
   padding-right: 14px;
   line-height: 2rem;
   letter-spacing: 0.03em;
-  color: var(--clr2);
+  color: var(--clr10);
+}
+
+.unread-count {
+  position: relative;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 9rem;
+  font-size: 0.875rem;
+  cursor: pointer;
 }
