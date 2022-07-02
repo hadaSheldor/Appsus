@@ -51,11 +51,11 @@ export default {
                 })
 
         },
-        action(action, currNote) {
+        action(action, currNote, arg) {
             const func = this[action]
             if (func && typeof func === "function") {
                 this.selectedNote = currNote
-                func()
+                func(arg)
             }
         },
         pin() {
@@ -71,6 +71,10 @@ export default {
                 text: 'Current module not implemented',
                 timer: 3000,
             })
+        },
+        changeColor(color){
+            this.selectedNote.style = color
+            this.updateNote(this.selectedNote)
         },
         delete() {
             noteService.remove(this.selectedNote.id)

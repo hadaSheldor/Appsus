@@ -55,5 +55,6 @@ const routes = [
 
 export const router = VueRouter.createRouter({
   routes,
+  linkActiveClass: "active",
   history: VueRouter.createWebHashHistory(),
 })
