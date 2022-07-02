@@ -3,7 +3,6 @@
     break-inside: avoid;
     width: auto; 
     border-radius: 1em; 
-    /* border: 2px solid var(--clr2); */
     padding: 0.5em;
     height: fit-content; 
     display: flex;
@@ -42,7 +41,7 @@
 
 .note.image img{
     border-radius: 0.5em;
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .note.video video{

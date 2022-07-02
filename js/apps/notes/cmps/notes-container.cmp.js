@@ -65,6 +65,13 @@ export default {
                     setTimeout(this.getNotes(), 6000)
                 })
         },
+        mail(){
+            Swal.fire({
+                title:'Send note to e-mail',
+                text: 'Current module not implemented',
+                timer: 3000,
+            })
+        },
         delete() {
             noteService.remove(this.selectedNote.id)
                 .then(() => {
