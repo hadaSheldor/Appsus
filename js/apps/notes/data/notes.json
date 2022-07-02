@@ -114,12 +114,12 @@
     "style": "",
     "info": {
       "title": "Groceries",
-      "text": "",
+      "text": "Friday groceries list",
       "url": "",
       "todo": [
         {
           "text": "Milk",
-          "isChecked": false
+          "isChecked": true
         },
         {
           "text": "Bread",
