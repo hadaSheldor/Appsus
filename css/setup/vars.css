@@ -1,6 +1,12 @@
-:root{
-    --clr1: #FFFFFE;
-    --clr2: #F1F3F4;
-    --clr3: #477CD8;
-    --clr4: #FEEFC3;
+:root {
+  --clr1: #fffffe;
+  --clr2: #f1f3f4;
+  --clr3: #477cd8;
+  --clr4: #feefc3;
+  --clr5: #5f6368;
+  --clr6: #ffd700;
+  --clr7: #202124;
+  --clr8: #f2f5f5cc;
+  --clr9: #e8eaed94;
+  --clr10: #d93025;
 }

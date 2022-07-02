@@ -1,16 +1,19 @@
 export default {
   template: `
     <section class="email-sidebar-container">
+      
       <!-- Compose -->
       <div class="compose-btn">
         <img src="../../../img/mail_create_32dp.png" />
         <span>Compose</span>
       </div>
+      
       <!-- Folders -->
       <div>
         <div @click="onFilterByFolder('inbox')" class="email-sidebar-btn inbox">
           <img src="../../../img/mail_draft_black_20dp.png" alt="inbox">
           <router-link to="/email/inbox" class="btn">Inbox</router-link>
+          <span class="unread-count">{{ unreadCount }}</span>
         </div>
         <div @click="onFilterByFolder('sent')" class="email-sidebar-btn sent">
           <img src="../../../img/mail_send_black_20dp.png" alt="sent">
@@ -24,34 +27,22 @@ export default {
           <img src="../../../img/mail_star_black_20dp.png" alt="starred">
           <router-link to="/email/starred" class="btn">Starred</router-link>
         </div>
-        <div @click="onFilterByFolder('draft')" class="email-sidebar-btn draft">
+        <!-- <div @click="onFilterByFolder('draft')" class="email-sidebar-btn draft">
           <img src="../../../img/mail_draft_black_20dp.png" alt="draft">
           <router-link to="/email/draft" class="btn">Draft</router-link>
-        </div>
+        </div> -->
       </div>
-
     </section>
-    
-    `,
-  //   props: ['unreadCount'],
+  `,
+  props: ['unreadCount'],
   data() {
     return {
       filterByFolder: 'inbox',
     }
   },
-
-  created() {},
-
   methods: {
     onFilterByFolder(folder) {
       this.$emit('filterByFolder', folder)
     },
   },
-  watch: {
-    folder(newFolder, prevFolder) {
-      console.log('newFolder', newFolder, 'oldFolder', prevFolder)
-    },
-  },
-
-  computed: {},
 }

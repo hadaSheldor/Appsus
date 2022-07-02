@@ -29,10 +29,14 @@ function get(emailId) {
 }
 
 function getByFolder(folder) {
+  if (!folder) folder = 'inbox'
   if (folder === 'inbox') {
     return query().then((emails) => {
       return emails.filter(
-        (email) => email.to === user.email && email.isDelete === false
+        (email) =>
+          email.to === user.email &&
+          email.isDelete === false &&
+          email.from != user.email
       )
     })
   } else if (folder === 'sent') {
@@ -57,7 +61,7 @@ function getByFolder(folder) {
 
 function getUnread() {
   return query().then((emails) => {
-    return emails.filter((email) => email.isRead === false)
+    return emails.filter((email) => email.folder === 'inbox' && !email.isRead)
   })
 }
 
@@ -72,16 +76,9 @@ function toggleRead(email) {
 }
 
 function moveToBin(email) {
-  // const idx = emailsData.findIndex((email) => email.id === emailId)
-  // const e = emailsData[idx]
   email.folder = 'bin'
   email.isDelete = true
   return storageService.put(EMAILS_KEY, email)
-  // const idx = emailsData.findIndex((email) => email.id === emailId)
-  // const e = emailsData[idx]
-  // e.folder = 'bin'
-  // e.isDelete = true
-  // return storageService.put(EMAILS_KEY, e)
 }
 
 function remove(emailId) {
