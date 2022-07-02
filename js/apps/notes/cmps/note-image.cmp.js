@@ -16,9 +16,6 @@ export default {
     data() {
         return {
             defaultColor: "#E48B83",
-           // calcStyle: {
-           //     backgroundColor: this.note.style ? this.note.style : this.defaultColor
-           // }
         }
     },
     created() {

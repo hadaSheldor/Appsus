@@ -16,8 +16,8 @@
   }
 
   .note-details-container {
-    width: 25em;
-    height: 20em;
+    width: 30em;
+    height: 25em;
     margin: 0px auto;
     padding: 1em; 
     background-color: #fff;
@@ -27,7 +27,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* border:green 2px solid */
+    align-items: center;
   }
   
   .modal-header h3 {
@@ -38,7 +38,6 @@
   .note-details-body {
     display:flex;
     flex-direction: column;
-    /* border: blue 2px solid; */
     flex-grow: 3;
   }
 
@@ -48,8 +47,26 @@
   }
   
   .note-details-body textarea{
-    height: 80%;
+    height: 30%;
+    border: var(--clr5) solid .1em;
+    margin-bottom: 0.8em;
   }
+
+  .note-details-img-area{
+    width: 350px;
+  }
+
+  .note-details-img-area img{
+    width: 100%;
+  }
+
+  .note-details-video-area{
+    width: 350px;
+  }
+
+  .note-details-video-area video{
+    width: 100%;
+  } 
 
   .note-details-footer{
     display:flex;

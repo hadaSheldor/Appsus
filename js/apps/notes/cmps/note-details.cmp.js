@@ -9,6 +9,14 @@ export default {
                 <div class="note-details-body">
                     <input type="text" v-model="noteToEdit.info.title" placeholder="Title" />
                     <textarea v-model="noteToEdit.info.text"></textarea> 
+                    <div v-if="note.type==='noteImage'" class="note-details-img-area">
+                        <img :src="note.info.url">
+                    </div>
+                    <div v-else-if="note.type==='noteVideo'" class="note-details-video-area">
+                        <video controls="controls" preload="auto">
+                            <source :src="note.info.url" type="video/mp4">
+                        </video> 
+                    </div>
                 </div>
                 <div class="note-details-footer">
                     <button @click="updateNote">Save</button>
