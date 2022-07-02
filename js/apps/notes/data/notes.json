@@ -1,9 +1,21 @@
 [
   {
+    "id": "note8",
+    "type": "noteText",
+    "pin": "pin",
+    "style": "",
+    "info": {
+      "title": "My plan !!!",
+      "text": "I'm sick of following my dreams, man. I'm just going to ask where they're going and hook up with 'em later.",
+      "url": "",
+      "todo": []
+    } 
+  },
+  {
     "id": "note1",
     "type": "noteImage",
-    "pin": "unpin",
-    "style": {},
+    "pin": "pin",
+    "style": "",
     "info": {
       "title": "Vacation",
       "text": "",
@@ -12,10 +24,34 @@
     } 
   },
   {
+    "id": "note11",
+    "type": "noteText",
+    "pin": "pin",
+    "style": "",
+    "info": {
+      "title": "Maybe, maybe",
+      "text": "Behind every great man is a woman rolling her eyes.",
+      "url": "",
+      "todo": []
+    } 
+  },
+  {
+    "id": "note5",
+    "type": "noteVideo",
+    "pin": "pin",
+    "style": "",
+    "info": {
+      "title": "The right way Cartoons",
+      "text": "",
+      "url": "../../../../js/apps/notes/data/media/theRightWay.mp4#t=8",
+      "todo": []
+    } 
+  },
+  {
     "id": "note2",
     "type": "noteText",
     "pin": "unpin",
-    "style": {},
+    "style": "",
     "info": {
       "title": "Some thoughts",
       "text": "Success is not final; failure is not fatal: It is the courage to continue that counts.",
@@ -27,7 +63,7 @@
     "id": "note3",
     "type": "noteImage",
     "pin": "unpin",
-    "style": {},
+    "style": "",
     "info": {
       "title": "Lovely cat",
       "text": "",
@@ -39,7 +75,7 @@
     "id": "note4",
     "type": "noteText",
     "pin": "unpin",
-    "style": {},
+    "style": "",
     "info": {
       "title": "Changes",
       "text": "When you change your thoughts, remember to also change your world.",
@@ -48,24 +84,12 @@
     } 
   },
   {
-    "id": "note5",
-    "type": "noteVideo",
-    "pin": "unpin",
-    "style": {},
-    "info": {
-      "title": "The right way Cartoons",
-      "text": "",
-      "url": "../../../../js/apps/notes/data/media/theRightWay.mp4#t=8",
-      "todo": []
-    } 
-  },
-  {
     "id": "note6",
     "type": "noteImage",
-    "pin": "pin",
-    "style": {},
+    "pin": "unpin",
+    "style": "",
     "info": {
-      "title": "Working cat",
+      "title": "Your time",
       "text": "",
       "url": "../../../../js/apps/notes/data/media/desktop.png",
       "todo": []
@@ -75,7 +99,7 @@
     "id": "note7",
     "type": "noteImage",
     "pin": "pin",
-    "style": {},
+    "style": "",
     "info": {
       "title": "Be free, enjoy...",
       "text": "",
@@ -84,34 +108,10 @@
     } 
   },
   {
-    "id": "note8",
-    "type": "noteText",
-    "pin": "unpin",
-    "style": {},
-    "info": {
-      "title": "Be free, enjoy...",
-      "text": "I'm sick of following my dreams, man. I'm just going to ask where they're going and hook up with 'em later.",
-      "url": "../../../../js/apps/notes/data/media/holiday.jpg",
-      "todo": []
-    } 
-  },
-  {
-    "id": "note9",
-    "type": "noteText",
-    "pin": "unpin",
-    "style": {},
-    "info": {
-      "title": "Be smart...",
-      "text": "Before you marry a person, you should first make them use a computer with slow Internet to see who they really are.",
-      "url": "../../../../js/apps/notes/data/media/holiday.jpg",
-      "todo": []
-    } 
-  },
-  {
     "id": "note10",
     "type": "noteTodo",
     "pin": "unpin",
-    "style": {},
+    "style": "",
     "info": {
       "title": "Groceries",
       "text": "",
@@ -131,5 +131,17 @@
         }
       ]
     }
+  },
+  {
+    "id": "note7",
+    "type": "noteImage",
+    "pin": "unpin",
+    "style": "",
+    "info": {
+      "title": "My new love",
+      "text": "So sweet",
+      "url": "../../../../js/apps/notes/data/media/guineaPig.jfif",
+      "todo": []
+    } 
   }
 ]

@@ -3,9 +3,10 @@ import noteButtonsPanel from './note-buttons-panel.cmp.js'
 export default {
     props: ["note"],
     template: `
-         <div v-if="note" class="note image">
-             <div><h4>{{ note.info.title }}</h4></div>
-             <img :src="note.info.url" :height="calcHeight">
+         <div v-if="note" class="note image" :style="{ 'background-color': calcStyle }">
+             <div><h3>{{ note.info.title }}</h3></div>
+             <div><p>{{ note.info.text }}</p></div>
+             <img :src="note.info.url">
              <note-buttons-panel :note = "note" @onButtonClicked="action" />
          </div>
    `,
@@ -13,18 +14,23 @@ export default {
         noteButtonsPanel
     },
     data() {
-        return {};
+        return {
+            defaultColor: "#E48B83",
+           // calcStyle: {
+           //     backgroundColor: this.note.style ? this.note.style : this.defaultColor
+           // }
+        }
     },
     created() {
     },
     methods: {
-        action(action){
-            this.$emit('noteClicked', action, this.note)
+        action(action, args){
+            this.$emit('noteClicked', action, this.note, args)
         }
     },
     computed: {
-        calcHeight(){
-
+        calcStyle(){
+            return this.note.style ? this.note.style : this.defaultColor
         },
     },
     unmounted() { },
