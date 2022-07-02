@@ -16,6 +16,7 @@ export const emailService = {
   toggleRead,
   getByFolder,
   getUnread,
+  createNewEmail,
 }
 
 function query() {
@@ -83,6 +84,23 @@ function moveToBin(email) {
 
 function remove(emailId) {
   return storageService.remove(EMAILS_KEY, emailId)
+}
+
+function createNewEmail(email) {
+  const newEmail = {
+    id: utilService.makeId(),
+    subject: email.subject,
+    body: email.body,
+    sentAt: Date.now(),
+    to: email.to,
+    from: user.email,
+    isRead: true,
+    isMarked: false,
+    isDraft: false,
+    isDelete: false,
+    folder: 'sent',
+  }
+  return storageService.post(EMAILS_KEY, newEmail)
 }
 
 function _createMails() {
