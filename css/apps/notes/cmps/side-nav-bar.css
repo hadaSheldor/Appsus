@@ -21,11 +21,21 @@
   background-color: var(--clr2);
 }
 
+<<<<<<< HEAD
 .menu-item.new-note {
   margin-bottom: 20px;
   margin-top: 10px;
   border: 0.3em solid var(--clr2);
   border-radius: 1.5em;
+=======
+.menu-item.new-note{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: .3em solid var(--clr2);
+    border-radius: 1.5em;
+    text-decoration: none;
+    color: inherit;
+>>>>>>> 75229387c90a1090642934cb8637098523cc38d9
 }
 
 .menu-item.new-note img {

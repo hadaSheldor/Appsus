@@ -1,9 +1,9 @@
 export default {
-    props: ["notePin"],
+    props: ["note"],
     template: `
         <div class="note-buttons-panel"> 
             <div>    
-                <button @click="onPin" :class="notePin"></button>
+                <button @click="onPin" :class="note.pin"></button>
             </div>
             <div class="note-edit-buttons-panel"> 
                 <button @click="onColorChange" title="Background options" class="color"></button>

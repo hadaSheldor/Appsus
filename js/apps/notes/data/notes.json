@@ -7,7 +7,8 @@
     "info": {
       "title": "Vacation",
       "text": "",
-      "url": "../../../../js/apps/notes/data/media/holidayCanada.jpg"
+      "url": "../../../../js/apps/notes/data/media/holidayCanada.jpg",
+      "todo": []
     } 
   },
   {
@@ -15,7 +16,12 @@
     "type": "noteText",
     "pin": "unpin",
     "style": {},
-    "text": "Success is not final; failure is not fatal: It is the courage to continue that counts."
+    "info": {
+      "title": "Some thoughts",
+      "text": "Success is not final; failure is not fatal: It is the courage to continue that counts.",
+      "url": "",
+      "todo": []
+    } 
   },
   {
     "id": "note3",
@@ -25,7 +31,8 @@
     "info": {
       "title": "Lovely cat",
       "text": "",
-      "url": "../../../../js/apps/notes/data/media/cat.jpg"
+      "url": "../../../../js/apps/notes/data/media/cat.jpg",
+      "todo": []
     } 
   },
   {
@@ -33,7 +40,12 @@
     "type": "noteText",
     "pin": "unpin",
     "style": {},
-    "text": "When you change your thoughts, remember to also change your world."
+    "info": {
+      "title": "Changes",
+      "text": "When you change your thoughts, remember to also change your world.",
+      "url": "",
+      "todo": []
+    } 
   },
   {
     "id": "note5",
@@ -43,7 +55,8 @@
     "info": {
       "title": "The right way Cartoons",
       "text": "",
-      "url": "../../../../js/apps/notes/data/media/theRightWay.mp4#t=8"
+      "url": "../../../../js/apps/notes/data/media/theRightWay.mp4#t=8",
+      "todo": []
     } 
   },
   {
@@ -54,7 +67,8 @@
     "info": {
       "title": "Working cat",
       "text": "",
-      "url": "../../../../js/apps/notes/data/media/desktop.png"
+      "url": "../../../../js/apps/notes/data/media/desktop.png",
+      "todo": []
     } 
   },
   {
@@ -65,7 +79,8 @@
     "info": {
       "title": "Be free, enjoy...",
       "text": "",
-      "url": "../../../../js/apps/notes/data/media/holiday.jpg"
+      "url": "../../../../js/apps/notes/data/media/holiday.jpg",
+      "todo": []
     } 
   },
   {
@@ -73,14 +88,24 @@
     "type": "noteText",
     "pin": "unpin",
     "style": {},
-    "text": "I'm sick of following my dreams, man. I'm just going to ask where they're going and hook up with 'em later."
+    "info": {
+      "title": "Be free, enjoy...",
+      "text": "I'm sick of following my dreams, man. I'm just going to ask where they're going and hook up with 'em later.",
+      "url": "../../../../js/apps/notes/data/media/holiday.jpg",
+      "todo": []
+    } 
   },
   {
     "id": "note9",
     "type": "noteText",
     "pin": "unpin",
     "style": {},
-    "text": "Before you marry a person, you should first make them use a computer with slow Internet to see who they really are."
+    "info": {
+      "title": "Be smart...",
+      "text": "Before you marry a person, you should first make them use a computer with slow Internet to see who they really are.",
+      "url": "../../../../js/apps/notes/data/media/holiday.jpg",
+      "todo": []
+    } 
   },
   {
     "id": "note10",
@@ -90,7 +115,8 @@
     "info": {
       "title": "Groceries",
       "text": "",
-      "todos": [
+      "url": "",
+      "todo": [
         {
           "text": "Milk",
           "isChecked": false

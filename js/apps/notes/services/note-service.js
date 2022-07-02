@@ -7,10 +7,11 @@ const NOTES_KEY = 'notes'
 
 export const noteService = {
     query,
-    //get,
+    get,
     remove,
-    put
-    // getEmptyBook,
+    put,
+    post,
+    getEmptyNote
 }
 
 _createNotes()
@@ -23,7 +24,6 @@ function _createNotes() {
             storageService.postMany(NOTES_KEY, notes)
         }
     })
-
 }
 
 function query() {
@@ -34,7 +34,30 @@ function remove(noteId) {
     return storageService.remove(NOTES_KEY, noteId)
 }
 
+function post(newNote){
+    return storageService.post(NOTES_KEY, newNote)
+}
+
 function put(currNote){
     return storageService.put(NOTES_KEY, currNote)
+}
+
+function get(noteId){
+    return storageService.get(NOTES_KEY, noteId)
+}
+
+function getEmptyNote(){
+    return   {
+        id: "",
+        type: "noteText",
+        pin: "unpin",
+        style: {},
+        info: {
+            title: "",
+            text: "Take a note...",
+            url: "",
+            todo: []
+        } 
+      }
 }
 

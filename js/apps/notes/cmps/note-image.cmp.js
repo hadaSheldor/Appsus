@@ -6,7 +6,7 @@ export default {
          <div v-if="note" class="note image">
              <div><h4>{{ note.info.title }}</h4></div>
              <img :src="note.info.url" >
-             <note-buttons-panel :notePin = "note.pin" @onButtonClicked="action" />
+             <note-buttons-panel :note = "note" @onButtonClicked="action" />
          </div>
    `,
     components: {

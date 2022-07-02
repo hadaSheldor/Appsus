@@ -2,4 +2,5 @@
 @import './cmps/side-nav-bar.css';
 @import './cmps/notes-container.css';
 @import './cmps/note.css';
-@import './cmps/note-buttons-panel.css'
+@import './cmps/note-buttons-panel.css';
+@import './cmps/note-details.css';

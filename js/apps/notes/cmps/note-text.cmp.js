@@ -4,8 +4,9 @@ export default {
  props: ["note"],
  template: `
       <div v-if="note" class="note text">
-          <div><h4>{{ note.text }}</h4></div>
-          <note-buttons-panel :notePin = "note.pin"  @onButtonClicked="action" />
+          <div><h4>{{ note.info.title }}</h4></div>
+          <div><h4>{{ note.info.text }}</h4></div>
+          <note-buttons-panel :note = "note"  @onButtonClicked="action" />
       </div>
 `,
 components: {
