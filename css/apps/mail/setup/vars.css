@@ -1,0 +1,14 @@
+:root {
+  /* Colors */
+  --clr7: #202124;
+  --clr2: #d93025;
+  --clr3: #e8eaed94;
+  --clr4: #f2f5f5cc;
+  --clr5: #5f6368;
+  --clr6: #ffd700;
+
+  /* Screen */
+  --s: 600px;
+  --m: 800px;
+  --w: 1060px;
+}

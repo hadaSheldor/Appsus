@@ -1,5 +1,16 @@
 .email-list-container {
   display: flex;
+  flex-direction: column;
   overflow-y: auto;
   overflow-x: hidden;
+  width: 100%;
+}
+
+.email-list-container table {
+  width: 90%;
+  margin: 0;
+}
+
+.new {
+  background-color: var(--clr4);
 }

@@ -23,33 +23,35 @@ function query() {
 }
 
 function get(emailId) {
-  return storageService.get(EMAILS_KEY, emailId)
+  return storageService.get(EMAILS_KEY, emailId).then((emails) => {
+    return emails.sort((e1, e2) => e2.sentAt - e1.sentAt)
+  })
 }
 
 function getByFolder(folder) {
-  // TODO: convert to switch
-  // TODO: add draft
   if (folder === 'inbox') {
     return query().then((emails) => {
       return emails.filter(
         (email) => email.to === user.email && email.isDelete === false
       )
     })
-  } else if (folder === 'sent')
+  } else if (folder === 'sent') {
     return query().then((emails) => {
       return emails.filter(
         (email) => email.from === user.email && email.isDelete === false
       )
     })
-  else if (folder === 'starred')
+  } else if (folder === 'starred')
     return query().then((emails) => {
       return emails.filter(
-        (email) => email.isMarked && email.isDelete === false
+        (email) => email.isMarked === true && email.isDelete === false
       )
     })
   else if (folder === 'bin')
     return query().then((emails) => {
-      return emails.filter((email) => email.isDelete === true)
+      return emails.filter(
+        (email) => email.isDelete === true && email.folder === 'bin'
+      )
     })
 }
 
@@ -69,12 +71,17 @@ function toggleRead(email) {
   return storageService.put(EMAILS_KEY, email)
 }
 
-function moveToBin(emailId) {
-  console.log('', emailId)
-  const idx = emailsData.findIndex((email) => email.id === emailId)
-  const email = emailsData[idx]
+function moveToBin(email) {
+  // const idx = emailsData.findIndex((email) => email.id === emailId)
+  // const e = emailsData[idx]
   email.folder = 'bin'
+  email.isDelete = true
   return storageService.put(EMAILS_KEY, email)
+  // const idx = emailsData.findIndex((email) => email.id === emailId)
+  // const e = emailsData[idx]
+  // e.folder = 'bin'
+  // e.isDelete = true
+  // return storageService.put(EMAILS_KEY, e)
 }
 
 function remove(emailId) {

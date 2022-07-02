@@ -1,34 +1,49 @@
 .email-sidebar-container {
-  position: fixed;
-  height: 100%;
-  flex-basis: 20%;
-  padding-inline-start: 0.7rem;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  background-color: #fff;
 }
 
 .email-sidebar-btn {
+  top: 1.3rem;
   position: relative;
   padding: 0.7rem;
   right: 1.2rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
   text-align: start;
   display: flex;
   align-items: center;
 }
 
-.email-sidebar-btn > img {
-  position: absolute;
-  right: 1rem;
-  left: 1.5rem;
-  font-size: 10rem;
+.email-sidebar-btn:hover {
+  background-color: var(--clr3);
+  border-start-end-radius: 25px;
+  border-end-end-radius: 25px;
+  padding-right: 1.5em;
 }
 
-.email-sidebar-btn > .btn {
+.email-sidebar-btn .btn {
+  text-decoration: none;
+  color: var(--clr7);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   position: relative;
   right: 2rem;
   left: 3rem;
   letter-spacing: 0.04em;
 }
 
+.email-sidebar-btn > img {
+  position: absolute;
+  right: 1rem;
+  left: 1.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+/* Compose btn */
 .compose-btn {
   position: relative;
   display: flex;
@@ -47,16 +62,22 @@
   cursor: pointer;
 }
 
+.compose-btn:hover {
+  box-shadow: rgba(60, 64, 67, 0.438) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.438) 0px 1px 9px 1px;
+  background-color: rgba(60, 64, 67, 0.027);
+}
+
 .compose-btn img {
   width: 32px;
   height: 32px;
 }
 
 .compose-btn span {
-  font-size: 14px;
+  font-size: 0.875rem;
   padding-left: 14px;
   padding-right: 14px;
   line-height: 2rem;
   letter-spacing: 0.03em;
-  color: #d93025;
+  color: var(--clr2);
 }

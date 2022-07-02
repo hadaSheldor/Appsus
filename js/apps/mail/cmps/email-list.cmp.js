@@ -3,11 +3,18 @@ import emailPreview from './email-preview.cmp.js'
 export default {
   template: `
   <section v-for="email in emails" :key="email.id" class="email-list-container">
-    <email-preview 
-      :email="email" 
-      @marked="onMarked(email)" 
-      @toggleRead="onToggleRead(email)" 
-      @remove="onRemoved(email.id)" />
+    <table>
+      <tbody>
+        <tr>
+          <email-preview 
+            :email="email" 
+            @marked="onMarked(email)" 
+            @toggleRead="onToggleRead(email)" 
+            @remove="onRemoved(email)"
+            @openEmail="onOpen(email)" />
+        </tr>
+      </tbody>
+    </table>
   </section>
 `,
   props: ['emails'],
@@ -15,11 +22,14 @@ export default {
     onMarked(email) {
       this.$emit('toggleMarked', email)
     },
-    onRemoved(emailId) {
-      this.$emit('remove', emailId)
+    onRemoved(email) {
+      this.$emit('remove', email)
     },
     onToggleRead(email) {
       this.$emit('toggleRead', email)
+    },
+    onOpen(email) {
+      this.$emit('openEmail', email)
     },
   },
 
